@@ -11,7 +11,8 @@
   "scripts": {
     "start": "grunt build && grunt upload",
     "test": "grunt test",
-    "lint": "eslint ./"
+    "lint": "eslint ./",
+    "deploy": "grunt deploy --prod && git push live master"
   },
   "dependencies": {
     "bcrypt-nodejs": "0.0.3",
@@ -33,6 +34,7 @@
     "grunt-eslint": "^18.0.0",
     "grunt-mocha-test": "^0.12.7",
     "grunt-nodemon": "^0.4.1",
+    "grunt-processhtml": "^0.4.1",
     "grunt-shell": "^1.2.1",
     "knex": "^0.10.0",
     "mocha": "^2.4.5",
